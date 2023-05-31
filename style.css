@@ -198,11 +198,12 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-  nav {
+ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 10vh;
+    width: 100vw;
     background-color: #191919;
   }
 
@@ -249,15 +250,19 @@ footer {
     color: hsl(290, 48%, 60%);
   }
 
+  main {
+    width: 100vw;
+  }
   .firstSection {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 50vh;
+    width: 100vw;
   }
 
   .firstSection > div {
-    width: 30%;
+    width: 45%;
   }
 
   .leftSection {
@@ -292,63 +297,74 @@ footer {
     color: #ffffff80;
   }
 
+  #copyRight > p{
+    font-size: 13px;
+  }
+
   main > hr {
     border: 0;
     background-color: #ba68ca;
     height: 1px;
     width: 90vw;
-    margin: 0 auto 5vh auto;
+    margin: 0 auto 2vh auto;
   }
 
   .secondSection {
-    min-width: 80vw;
-    margin: 0 10vw;
-    height: 75vh;
+    margin: 0 0;
+    height: 50vh;
+    width: 100vw;
   }
 
   .secondSection h1 {
     font-size: 1.5rem;
   }
 
+  .secondSection > span,
+  h1 {
+    margin-left: 3vh;
+  }
   .secondSection .box {
-    width: 80vw;
+    width: 85vw;
     background-color: #fff;
     height: 2px;
-    margin: 10vh auto;
+    margin: 6vh auto;
     display: flex;
+    justify-content: flex-start;
   }
-
+  
   .secondSection .vertical {
-    height: 10vh;
+    height: 5vh;
     width: 1px;
     background-color: #fff;
-    margin: 0 9vw;
+    margin: 0 25% 0 0;
   }
-
+  
   .img-top > img {
     width: 30px;
     position: relative;
     top: -35px;
     right: 14px;
   }
-
+  
   .job-title {
     position: relative;
-    top: 8vh;
-    font-size: 1.5em;
-    width: 12vw;
-  }
-
+    top: 2vh;
+    font-size: 15px;
+    width: 19vw;
+  } 
+  
   .job-desc {
+    width: 100%;
     position: relative;
-    top: 9vh;
+    font-size: 50%;
+    top: 3vh;
     width: 12vw;
     color: #ffffff80;
-  }
+  } 
 
   footer {
     background-color: #ba68ca20;
-    height: 26vh;
+    height: 22vh;
   }
 
   .footer-content {
@@ -384,5 +400,4 @@ footer {
   .footer-content > div > ul > li > img {
     height: 20px;
     margin: 0 10px;
-  }
-}
+  }}
